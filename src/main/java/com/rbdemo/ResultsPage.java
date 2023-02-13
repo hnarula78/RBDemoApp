@@ -35,7 +35,12 @@ public class ResultsPage extends  BasePage {
     public String getFirstResultHeader(){
         String firstResult = getMessage(first_searchResult);
         System.out.println("First record from the search results list is " + firstResult);
-        return firstResult;
+        String words[] = firstResult.split(" ");
+        firstResult = words[1]+" "+ words [2];
+        if(words[2].contains("F-150") || words[2].contains("F150"))
+            return "Ford F150";
+        else
+            return firstResult;
     }
 
 

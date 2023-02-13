@@ -41,7 +41,7 @@ public class TestCase {
     public void getFirstSearchResult()
     {
         ResultsPage resultsPage = new ResultsPage(this.driver);
-        Assert.assertTrue(resultsPage.getFirstResultHeader().contains("Ford F150"), "Search results did not returned any Ford F-150 in first result");
+        Assert.assertTrue(resultsPage.getFirstResultHeader().contains("Ford F150"), "Search results did not returned any Ford F 150 in first result");
         System.out.println("Test 2 Passed");
     }
 
